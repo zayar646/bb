@@ -1,0 +1,49 @@
+footer{
+	width: 90%;
+	display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    position: static;
+    margin-top: 80px;
+}
+.footersecondbox{
+	
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.footersecondbox>p{
+	font-size: 15px;
+    margin: 0px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.footersecondbox>p>a{
+    text-decoration: none;
+    color: black;    
+}
+footer>center{
+    margin-top: 40px;
+    width: 100%;
+}
+footer>center>div{
+opacity: 50%;
+    text-align: center;
+    width: 46%;
+}
+@media only screen and (max-width: 1075px) {
+    footer>center>div{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 786px) {
+    footer{
+            width: 100%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    footer{
+        width: ;
+    }
+}

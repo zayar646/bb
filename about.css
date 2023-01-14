@@ -1,0 +1,91 @@
+@keyframes right{
+	0%{ transform:translateX(1000px);opacity: 0% }
+	100%{ transform:translateX(0px);opacity:100% }
+}
+@keyframes left{
+	0%{ transform:translateX(-1000px);opacity:0% }
+	100%{ transform:translateX(0px);opacity:100% }
+}
+footer{
+	position: static;
+}
+*{
+	font-family: sans-serif;
+}
+header{
+	width: 100%;
+}
+
+header>h1{
+	text-align: center;
+}
+.first{
+	height: 80vh;
+}
+.myatmin,.minthiak{
+	display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 450px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    overflow: hidden;
+}
+.arker,.zayar{
+	display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.myatminbox,.minthiakbox{
+	display: flex;
+    height: 90%;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.arkerbox,.zayarbox{
+	display: flex;
+}
+.myatmininfo,.arkerinfo,.minthiakinfo,.zayarinfo{
+	height: 100%;
+	width: 60%;
+}
+.myatminpicbox,.arkerpicbox,.minthiakpicbox,.zayarpicbox{
+	width: 396px;
+	height: 405px;
+	background-image: url("../League-of-Introverts/pj photo1/MicrosoftTeams-image (64).png");
+	background-position: center;
+	background-size: cover;
+}
+.myatminbox,.minthiakbox{
+	animation: right 1.6s ease-in 0s;
+}
+.arkerbox,.zayarbox{
+	animation: left 1.6s ease-in 0s;
+}
+.minthiakpicbox{
+
+}
+.zayarpicbox{
+
+}
+@media only screen and (max-width:786px) {
+	.myatmininfo,.arkerinfo,.minthiakinfo,.zayarinfo{
+		width: 100%;
+	}
+	.myatminpicbox,.arkerpicbox,.minthiakpicbox,.zayarpicbox{
+		width: 375px;
+	}
+	
+	.myatmin{
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 1270px) {
+	.myatmin,.arker,.minthiak,.zayar{
+		height: 760px;
+	}
+}
